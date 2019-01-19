@@ -3,8 +3,8 @@ data "aws_availability_zones" "availability_zones" {}
 locals {
   cidr               = "192.168.0.0/16"
   availability_zones = ["${data.aws_availability_zones.availability_zones.names}"]
-  private_subnets    = ["192.168.1.0/24","192.168.2.0/24","192.168.3.0/24"]
-  public_subnets     = ["192.168.10.0/24","192.168.11.0/24","192.168.12.0/24"]
+  private_subnets    = ["192.168.1.0/24", "192.168.2.0/24", "192.168.3.0/24"]
+  public_subnets     = ["192.168.10.0/24", "192.168.11.0/24", "192.168.12.0/24"]
 }
 
 module "vpc" {

@@ -1,4 +1,3 @@
-
 # Create IAM Role and Policy for ECS Task
 
 # Create IAM Assume Role Policy Document
